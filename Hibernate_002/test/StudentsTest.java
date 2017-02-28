@@ -36,7 +36,7 @@ public class StudentsTest {
 			//会话对象
 			session = sessionFactory.openSession();
 			
-			//开启事务
+			//开启事务。
 			transaction = session.beginTransaction();
 			
 		} catch (Exception e) {
