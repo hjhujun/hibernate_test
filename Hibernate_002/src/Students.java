@@ -1,3 +1,4 @@
+import java.sql.Blob;
 import java.util.Date;
 
 public class Students {
@@ -7,13 +8,22 @@ public class Students {
 	private String gender;
 	private Date birthday;
 	private String address;
+	private Blob picture;
+
+	public Blob getPicture() {
+		return picture;
+	}
+
+	public void setPicture(Blob image) {
+		this.picture = image;
+	}
 
 	public Students() {
 
 	}
 
 	public Students(int stid, String sname, String gender, Date birthday, String address) {
-		//super();
+		// super();
 		this.stid = stid;
 		this.sname = sname;
 		this.gender = gender;
@@ -24,7 +34,7 @@ public class Students {
 	@Override
 	public String toString() {
 		return "Students [stid=" + stid + ", sname=" + sname + ", gender=" + gender + ", birthday=" + birthday
-				+ ", address=" + address + "]";
+				+ ", address=" + address +  "]";
 	}
 
 	public int getStid() {
@@ -66,7 +76,5 @@ public class Students {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-
-	
 
 }
