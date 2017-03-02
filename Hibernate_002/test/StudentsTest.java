@@ -75,10 +75,8 @@ public class StudentsTest {
 
 			// 提交事务
 			transaction.commit();
-
 			// 关闭会话
 			session.close();
-
 			// 关闭会话工厂
 			sessionFactory.close();
 
